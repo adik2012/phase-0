@@ -1,10 +1,45 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+:root {
+  --color-heading: #2c3e50;
+  --color-text: #555555;
+  --color-accent: #2980b9;
+
+  --font-family: "Arial", sans-serif;
+  --font-size-heading: 2rem;
+  --font-size-text: 1rem;
+
+  --max-width: 1200px;
+
+  --line-height-base: 1.6;
+
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 4rem;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--color-text);
+  max-width: var(--max-width);
+  line-height: var(--line-height-base);
+  padding: var(--spacing-md);
+  margin: 0 auto;
+}
+
 h1 {
-  color: #2c3e50;
-  font-size: 2rem;
+  color: var(--color-heading);
+  font-size: var(--font-size-heading);
+}
+
+section {
+  padding: var(--spacing-xl) 0;
 }
 
 p {
-  color: #555555;
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: var(--font-size-text);
 }
