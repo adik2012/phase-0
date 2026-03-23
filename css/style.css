@@ -8,7 +8,7 @@
   --color-text: #555555;
   --color-accent: #2980b9;
 
-  --font-family: "Arial", sans-serif;
+  --font-family: "Inter", sans-serif;
   --font-size-heading: 2rem;
   --font-size-text: 1rem;
 
@@ -31,9 +31,24 @@ body {
   margin: 0 auto;
 }
 
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 h1 {
   color: var(--color-heading);
   font-size: var(--font-size-heading);
+  font-weight: 700;
+}
+
+h2 {
+  color: var(--color-heading);
+  font-weight: 600;
 }
 
 section {
@@ -42,4 +57,19 @@ section {
 
 p {
   font-size: var(--font-size-text);
+}
+
+button {
+  background-color: var(--color-accent);
+  color: #ffffff;
+  border: none;
+  padding: var(--spacing-sm) var(--spacing-lg);
+  font-family: var(--font-family);
+  font-size: var(--font-size-text);
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+button:hover {
+  opacity: 0.85;
 }
